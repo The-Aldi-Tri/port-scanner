@@ -1,10 +1,10 @@
-### freeCodeCamp - Information Security Projects - Port Scanner
+# freeCodeCamp - Information Security Projects - Port Scanner
 
 Instructions for building the project can be found at https://www.freecodecamp.org/learn/information-security/information-security-projects/port-scanner.
 
 My solution link: https://boilerplate-port-scanner.the-aldi-tri.repl.co.
 
-### Assignment
+## Assignment
 
 Create a port scanner using Python.
 
