@@ -1,10 +1,32 @@
-# freeCodeCamp - Information Security Projects - Port Scanner
+# Port Scanner
+
+[![Run on Repl.it](https://replit.com/badge/github/The-Aldi-Tri/port-scanner)](https://replit.com/new/github/The-Aldi-Tri/port-scanner)
+
+*You need an account on Replit
+
+
+## FreeCodeCamp - Information Security Certification Projects
 
 Instructions for building the project can be found at https://www.freecodecamp.org/learn/information-security/information-security-projects/port-scanner.
 
-My solution link: https://boilerplate-port-scanner.the-aldi-tri.repl.co.
 
 ## Assignment
+
+You will be [working on this project with our Replit starter code](https://replit.com/github/freeCodeCamp/boilerplate-port-scanner).
+
+*   Start by importing the project on Replit.
+*   Next, you will see a `.replit` window.
+*   Select `Use run command` and click the `Done` button.
+
+We are still developing the interactive instructional part of the Python curriculum. For now, here are some videos on the freeCodeCamp.org YouTube channel that will teach you everything you need to know to complete this project:
+
+*   [Python for Everybody Video Course](https://www.freecodecamp.org/news/python-for-everybody/) (14 hours)
+    
+*   [Learn Python Basics in Depth](https://www.freecodecamp.org/news/learn-python-basics-in-depth-video-course/) (4 hours)
+    
+*   [Intermediate Python Course](https://www.freecodecamp.org/news/intermediate-python-course/) (6 hours)
+
+----------
 
 Create a port scanner using Python.
 
@@ -12,40 +34,36 @@ In the `port_scanner.py` file, create a function called `get_open_ports` that ta
 
 Here are examples of how the function may be called:
 
-```
-get_open_ports("209.216.230.240", [440, 445])
-get_open_ports("www.stackoverflow.com", [79, 82])
-```
+    get_open_ports("209.216.230.240", [440, 445])
+    get_open_ports("www.stackoverflow.com", [79, 82])
+    
 
 The function should return a list of open ports in the given range.
 
-The `get_open_ports` function should also take an optional third argument of `True` to indicate "Verbose" mode. If this is set to true, the function shourd return a descriptive string instead of a list of ports.
+The `get_open_ports` function should also take an optional third argument of `True` to indicate "Verbose" mode. If this is set to true, the function should return a descriptive string instead of a list of ports.
 
 Here is the format of the string that should be returned in verbose mode (text inside `{}` indicates the information that should appear):
 
-```
-Open ports for {URL} ({IP address})
-PORT     SERVICE
-{port}   {service name}
-{port}   {service name}
-```
+    Open ports for {URL} ({IP address})
+    PORT     SERVICE
+    {port}   {service name}
+    {port}   {service name}
+    
 
 You can use the dictionary in `common_ports.py` to get the correct service name for each port.
 
 For example, if the function is called like this:
 
-```
-port_scanner.get_open_ports("scanme.nmap.org", [20, 80], True)
-```
+    port_scanner.get_open_ports("scanme.nmap.org", [20, 80], True)
+    
 
 It should return the following:
 
-```
-Open ports for scanme.nmap.org (45.33.32.156)
-PORT     SERVICE
-22       ssh
-80       http
-```
+    Open ports for scanme.nmap.org (45.33.32.156)
+    PORT     SERVICE
+    22       ssh
+    80       http
+    
 
 Make sure to include proper spacing and new line characters.
 
@@ -53,14 +71,17 @@ If the URL passed into the `get_open_ports` function is invalid, the function sh
 
 If the IP address passed into the `get_open_ports` function is invalid, the function should return the string: "Error: Invalid IP address".
 
-### Development
+Development
+-----------
 
 Write your code in `port_scanner.py`. For development, you can use `main.py` to test your code. Click the "run" button and `main.py` will run.
 
-### Testing
+Testing
+-------
 
 The unit tests for this project are in `test_module.py`. We imported the tests from `test_module.py` to `main.py` for your convenience. The tests will run automatically whenever you hit the "run" button.
 
-### Submitting
+Submitting
+----------
 
 Copy your project's URL and submit it to freeCodeCamp.
